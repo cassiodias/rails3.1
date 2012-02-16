@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  developer: 
+  skill: 
+  level: 1
+
+two:
+  developer: 
+  skill: 
+  level: 1

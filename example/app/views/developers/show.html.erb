@@ -1,0 +1,9 @@
+<h1>Edit developer: <%= @developer.name %></h1>
+
+<%= form_for @developer do |f| %>
+  <%= f.label :name, 'Name' %>:
+  <%= f.text_field :name %><br />
+  <%= f.label :email, 'E-mail' %>:
+  <%= f.text_field :email %><br />
+  <%= f.submit%>	
+<% end %>

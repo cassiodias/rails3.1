@@ -1,0 +1,9 @@
+<h1>Products from <%= current_user.name %></h1>
+
+<ul id="products">
+  <% for product in @products %>
+    <li>
+		<%= link_to product.name, product %>
+	</li>
+  <% end %>
+</ul>

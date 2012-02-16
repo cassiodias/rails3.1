@@ -1,0 +1,15 @@
+<h1>Sign in</h1>
+<div style="color:red"><%= flash[:notice] %></div>
+<%= form_for(@user, url: sessions_path) do |f| %>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :pass %><br />
+    <%= f.text_field :pass %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Autenticar" %>
+  </div>
+<% end %>

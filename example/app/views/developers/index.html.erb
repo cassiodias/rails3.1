@@ -1,0 +1,9 @@
+<h1>Developers#index</h1>
+
+<ul id="developers">
+  <% for developer in @developers %>
+    <li>
+		<%= link_to developer.name, developer %>
+	</li>
+  <% end %>
+</ul>

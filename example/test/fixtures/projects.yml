@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  client: MyString
+  start: 2012-02-16
+  hours: 1
+  team: MyText
+
+two:
+  title: MyString
+  client: MyString
+  start: 2012-02-16
+  hours: 1
+  team: MyText
