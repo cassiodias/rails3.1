@@ -2,17 +2,22 @@
 class SessionsController < ApplicationController
   skip_before_filter :auth
   def new
-   @user = User.new
+   @client = Client.new
   end
 
   def create
-     @user = User.auth(params[:user])
-        if @user
-          session[:user_id] = @user.id
+     @client = Client.auth(params[:client])
+        if @client
+          session[:client_id] = @client.id
           return redirect_to root_path
         else
           return redirect_to new_session_path,
             notice: "Usuário ou senha inválidos"
         end
+  end
+  
+  def destroy
+    session.delete(:client_id)
+    redirect_to new_session_path
   end
 end
